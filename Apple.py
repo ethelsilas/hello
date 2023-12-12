@@ -6,7 +6,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense
 
 # Load your dataset (assuming df1 is your pandas DataFrame)
-df1 = pd.read_csv('C:\Users\ESilas\Downloads\Apple_dataset.csv')
+df1 = pd.read_csv(r'C:\Users\ESilas\Downloads\Apple_dataset.csv')
 
 # Extract the time series data
 data = df1['Close'].values.reshape(-1, 1)
